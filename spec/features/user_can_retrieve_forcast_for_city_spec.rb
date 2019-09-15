@@ -1,12 +1,17 @@
 require 'rails_helper'
 
 describe "As a user" do
-  it "I can retrieve a forcast for a city" do
+  it "I can retrieve a forecast for a city" do
+    stub_json("https://maps.googleapis.com/maps/api/geocode/json?", "./fixtures/geocode_denver.json")
 
-    visit "/api/v1/forecast?location=denver,co"
+    location = "Denver, CO"
 
-    expect(current_path).to eq("/forcast?location=denver,co")
+    visit "/api/v1/forecast?location=#{location}"
+
+    expect(current_path).to eq("/api/v1/forecast?location=denver,co")
     expect(current_page).to have_content("Denver, CO")
-    expect(current_page).to have_content("Weather")
+    expect(current_page).to have_content("United States")
+    expect(current_page).to have_link("Change Location")
+    expect(current_page).to have_link("favorite")
   end
 end
