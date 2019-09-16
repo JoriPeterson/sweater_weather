@@ -8,6 +8,6 @@ class Api::V1::GifsController < ApplicationController
 
     gif_facade = GifFacade.new(forecast_facade.weather_info)
     # binding.pry
-    render json: GifSerializer.new(gif_facade.create_objects)
+    render json: GifSerializer.new(gif_facade.create_objects.flatten)
   end
 end
