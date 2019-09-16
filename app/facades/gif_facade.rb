@@ -6,17 +6,9 @@ class GifFacade
   end
 
   def gifs
-    giphy_response = @daily_summary.each do |summary|
-      GiphyService.new(summary)
+    @daily_summary.map do |summary|
+      GiphyService.new(summary).get_gifs
     end
-    binding.pry
-    giphy_response
   end
 
-  private
-
-  # def giphy_services
-  #   GiphyService.new(@daily_summary)
-  #   # @_giphy_services ||= GiphyService.new(@daily_summary)
-  # end
 end
