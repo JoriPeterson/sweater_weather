@@ -13,7 +13,7 @@ class GiphyService
   def conn
     Faraday.new('https://api.giphy.com') do |f|
       f.params['api_key'] = ENV["GIPHY_API_KEY"]
-      f.params['q'] = "#{summary}"
+      f.params['q'] = "#{@summary}"
       f.adapter Faraday.default_adapter
     end
   end
