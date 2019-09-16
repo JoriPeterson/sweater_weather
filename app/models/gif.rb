@@ -3,8 +3,7 @@ class Gif
 
   def initialize(info, weather_info)
     @id = 1
-    @day = weather_info.daily[:date]
     @url = info[:url]
-    binding.pry
+    # binding.pry
   end
 end

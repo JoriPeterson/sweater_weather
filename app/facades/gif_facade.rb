@@ -6,14 +6,13 @@ class GifFacade
   end
 
   def gifs
-    @daily_summary.map do |summary|
+    @daily_summary.each do |summary|
       GiphyService.new(summary).get_gifs
     end
   end
 
-  # Need to iterate over weather info by day and tie to url!!
-
   def create_objects
+    binding.pry
     gifs[0][:data].map do |info|
       Gif.new(info, @weather_info)
     end
