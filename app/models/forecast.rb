@@ -22,7 +22,7 @@ class Forecast
   def format_hourly(info)
     info[:hourly][:data].map do |hour|
       { time: Time.at(hour[:time]).strftime("%-I %p"),
-        icon: hour[:icon],
+        summary: hour[:summary],
         temp: hour[:temperature].to_i }
     end
   end
@@ -30,7 +30,7 @@ class Forecast
   def format_daily(info)
     info[:daily][:data].map do |day|
       { date: Time.at(day[:time]).strftime("%A"),
-        icon: day[:icon],
+        summary: day[:summary],
         precip: day[:precipProbability],
         daily_high: day[:temperatureHigh],
         daily_low: day[:temperatureLow] }
