@@ -6,7 +6,7 @@ class Api::V1::GifsController < ApplicationController
     lng = location_facade.address_components.lng
     forecast_facade = ForecastFacade.new(lat, lng)
 
-    GifFacade.new(forecast_facade.weather_info)
+    gif_facade = GifFacade.new(forecast_facade.weather_info)
+    GifSerializer.new(gif_facade.gifs)
   end
-
 end
