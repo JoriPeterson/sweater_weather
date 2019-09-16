@@ -1,10 +1,12 @@
 class Location
-  attr_reader :city, :state, :country
+  attr_reader :id, :city, :state, :country, :lat, :lng
 
-  def initialize(components)
-  binding.pry
-    @city = components[:long_name]
-    @state = components[:short_name]
-    @country = components[:long_name]
+  def initialize(info)
+    @id = 1
+    @city = info.first.last[0][:long_name]
+    @state = info.first.last[2][:short_name]
+    @country = info.first.last[3][:long_name]
+    @lat = info[:geometry][:location][:lat].round(4)
+    @lng = info[:geometry][:location][:lng].round(4)
   end
 end
