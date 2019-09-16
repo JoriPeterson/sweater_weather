@@ -14,5 +14,6 @@ describe "Forecast API" do
     expect(gif[:data][:images].first[:url].class).to eq(String)
     expect(gif[:data][:images].first[:day].class).to eq(String)
     expect(gif[:data][:images].first[:summary].class).to eq(String)
+    # expect(gif[:data][:images].count).to eq(5)
   end
 end
