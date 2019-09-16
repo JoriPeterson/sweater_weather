@@ -1,8 +1,11 @@
 class Forecast
-  attr_reader :id, :date_and_time, :current_summary, :current_icon, :current_temp, :feels_like, :humidity, :uv_index, :visibility, :todays_summary, :daily_icon, :high_temp, :low_temp, :hourly, :daily
+  attr_reader :id, :city, :state, :country, :date_and_time, :current_summary, :current_icon, :current_temp, :feels_like, :humidity, :uv_index, :visibility, :todays_summary, :daily_icon, :high_temp, :low_temp, :hourly, :daily
 
-  def initialize(info)
+  def initialize(info, address)
     @id = 1
+    @city = address.city
+    @state = address.state
+    @country = address.country
     @date_and_time = Time.at(info[:currently][:time]).strftime("%-I:%M %p, %-m/%-d")
     @current_summary = info[:currently][:summary]
     @current_icon = info[:currently][:icon]

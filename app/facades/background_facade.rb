@@ -1,5 +1,4 @@
-class LocationFacade
-  attr_reader :address_components
+class BackgroundFacade
 
   def initialize(location)
     @formatted_location = location.split(",")
@@ -7,13 +6,13 @@ class LocationFacade
     @state = @formatted_location.last.lstrip
   end
 
-  def address_components
-    Location.new(services.get_location_details[:results])
+  def backgrounds
+     services.get_background[0][:urls][:full]
   end
 
   private
 
   def services
-  @_services ||= GeocodeService.new(@city, @state)
+  @_services ||= UnsplashService.new(@city, @state)
   end
 end
