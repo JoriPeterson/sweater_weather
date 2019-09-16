@@ -1,7 +1,9 @@
 class Api::V1::WeatherController < ApplicationController
 
   def show
-    render locals: {location: LocationFacade.new(params[:location])}
-    render locals: {forecast: ForecastFacade.new(params[:lat], params[:lng])}
+    facade = LocationFacade.new(params[:location])
+    render json: LocationSerializer.new(facade.address_components)
+
+    ForecastFacade.new(params[:lat], params[:lng])
   end
 end
