@@ -16,8 +16,4 @@ describe "Geocode API" do
     expect(location_details[0][:attributes][:lat]).to eq(39.7392)
     expect(location_details[0][:attributes][:lng]).to eq(-104.9903)
   end
-
-  it 'retrieves the forecast' do
-    
-  end
 end
