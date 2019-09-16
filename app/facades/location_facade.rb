@@ -1,4 +1,5 @@
 class LocationFacade
+  attr_reader :address_components
 
   def initialize(location)
     @formatted_location = location.split(",")
@@ -7,9 +8,8 @@ class LocationFacade
   end
 
   def address_components
-    binding.pry
-    services.get_location_details[:results].first[:address_components].map do |components|
-      Location.new(components)
+    services.get_location_details[:results].map do |info|
+      Location.new(info)
     end
   end
 
