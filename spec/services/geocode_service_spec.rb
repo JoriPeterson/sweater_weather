@@ -10,14 +10,10 @@ describe GeocodeService do
   end
 
   describe "instance methods" do
-    it "returns address", :vcr do
+    it "returns address" do
       search = @geocode_service.get_location_details[:results]
       expect(search).to be_a Array
       expect(search[0]).to be_an Hash
-      # location = search[0]
-      #
-      # expect(location).to have_key :lat
-      # expect(location).to have_key :lng
     end
   end
 end
