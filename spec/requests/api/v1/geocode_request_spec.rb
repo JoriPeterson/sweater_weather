@@ -3,6 +3,7 @@ require 'rails_helper'
 describe "Geocode API" do
   it "retrieves the location" do
 
+    WebMock.allow_net_connect!
     location = "Denver, CO"
 
     get "/api/v1/forecast?location=#{location}"
