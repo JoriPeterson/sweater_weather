@@ -1,7 +1,6 @@
 class GifFacade
 
   def initialize(weather_info)
-    @weather_info = weather_info
     @days = weather_info.daily
     @daily_summary = weather_info.daily.map { |day| day[:summary] }
   end
@@ -17,6 +16,6 @@ class GifFacade
       @days.map do |day|
         Gif.new(info, day[:date], day[:summary])
       end
-    end
+    end.flatten
   end
 end
