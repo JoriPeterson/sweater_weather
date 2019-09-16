@@ -11,4 +11,11 @@ class GifFacade
     end
   end
 
+  # Need to iterate over weather info by day and tie to url!!
+
+  def create_objects
+    gifs[0][:data].map do |info|
+      Gif.new(info, @weather_info)
+    end
+  end
 end
