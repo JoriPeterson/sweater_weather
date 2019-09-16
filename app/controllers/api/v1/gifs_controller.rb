@@ -7,6 +7,6 @@ class Api::V1::GifsController < ApplicationController
     forecast_facade = ForecastFacade.new(lat, lng)
 
     gif_facade = GifFacade.new(forecast_facade.weather_info)
-    GifSerializer.new(gif_facade.gifs)
+    GifSerializer.new(gif_facade.create_objects)
   end
 end
