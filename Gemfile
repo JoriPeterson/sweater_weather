@@ -42,6 +42,7 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'pry'
   gem 'factory_bot_rails'
+  gem 'fast_jsonapi'
 end
 
 group :development do
@@ -58,7 +59,6 @@ group :test do
   gem 'shoulda-matchers'
   gem 'launchy'
   gem 'webmock'
-  gem 'vcr'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
