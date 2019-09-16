@@ -7,10 +7,12 @@ describe "Forecast API" do
 
     get "/api/v1/gifs?location=#{location}"
 
-    gif = JSON.parse(response.body, symbolize_names: true)[:data]
+    gif = JSON.parse(response.body, symbolize_names: true)
 
     expect(response).to be_successful
-    expect(gif[:images].first[:time].class).to eq(String)
-    expect(gif[:images].first[:summary].class).to eq(String)
+
+    expect(gif[:data][:images].first[:url].class).to eq(String)
+    expect(gif[:data][:images].first[:day].class).to eq(String)
+    expect(gif[:data][:images].first[:summary].class).to eq(String)
   end
 end
