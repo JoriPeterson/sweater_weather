@@ -8,9 +8,7 @@ class LocationFacade
   end
 
   def address_components
-    services.get_location_details[:results].map do |info|
-      Location.new(info)
-    end
+    Location.new(services.get_location_details[:results])
   end
 
   private
