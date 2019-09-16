@@ -1,9 +1,10 @@
 class Gif
-  attr_reader :id, :url
+  attr_reader :id, :url, :day, :summary
 
-  def initialize(info, weather_info)
+  def initialize(info, date, summary)
     @id = 1
     @url = info[:url]
-    # binding.pry
+    @day = date
+    @summary = summary
   end
 end
