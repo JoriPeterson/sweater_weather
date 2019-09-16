@@ -1,7 +1,6 @@
 class GifSerializer
-  # include FastJsonapi::ObjectSerializer
-  # attributes :id, :url, :day, :summary
+
   def initialize(data)
-    @data = data
+    @data = {:images => data}
   end
 end
