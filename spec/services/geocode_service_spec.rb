@@ -2,6 +2,7 @@ require 'rails_helper'
 
 describe GeocodeService do
 	before :each do
+		WebMock.allow_net_connect!
 		@geocode_service = GeocodeService.new("Denver", "CO")
 	end
 
