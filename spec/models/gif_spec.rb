@@ -2,11 +2,11 @@ require 'rails_helper'
 
 describe Gif do
   it "exists" do
-    attrs = {
-      day: "Wednesday",
-    }
+    url = "wwww.example.com",
+    day = "Wednesday",
+    summary = "Sunny"
 
-    gif = Gif.new(attrs)
+    gif = Gif.new(url, day, summary)
 
     expect(gif).to be_a Gif
     expect(gif.day).to eq("Wednesday")
