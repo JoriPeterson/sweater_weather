@@ -1,8 +1,7 @@
 class UnsplashService
 
-  def initialize(city, state)
-    @city = city
-    @state = state
+  def initialize(location)
+    @location = location
   end
 
   def get_background
@@ -14,7 +13,7 @@ class UnsplashService
   def conn
     Faraday.new('https://api.unsplash.com') do |f|
       f.params['client_id'] = ENV["UNSPLASH_API_KEY"]
-      f.params['query'] = "#{@city}+#{@state}"
+      f.params['query'] = "#{@location}"
       f.adapter Faraday.default_adapter
     end
   end

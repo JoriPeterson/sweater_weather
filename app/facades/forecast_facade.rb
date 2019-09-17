@@ -1,9 +1,7 @@
 class ForecastFacade
 
   def initialize(location)
-    @formatted_location = location.split(",")
-    @city = @formatted_location.first
-    @state = @formatted_location.last.lstrip
+    @location = location
     @lat = address_components.lat
     @lng = address_components.lng
   end
@@ -19,10 +17,10 @@ class ForecastFacade
   private
 
   def geocode_services
-  @_geocode_services ||= GeocodeService.new(@city, @state)
+    @_geocode_services ||= GeocodeService.new(@location)
   end
 
   def darksky_services
-  @_dark_skyservices ||= DarkskyService.new(@lat, @lng)
+    @_dark_skyservices ||= DarkskyService.new(@lat, @lng)
   end
 end

@@ -1,9 +1,7 @@
 class BackgroundFacade
 
   def initialize(location)
-    @formatted_location = location.split(",")
-    @city = @formatted_location.first
-    @state = @formatted_location.last.lstrip
+    @location = location
   end
 
   def backgrounds
@@ -13,6 +11,6 @@ class BackgroundFacade
   private
 
   def services
-  @_services ||= UnsplashService.new(@city, @state)
+    @_services ||= UnsplashService.new(@location)
   end
 end
