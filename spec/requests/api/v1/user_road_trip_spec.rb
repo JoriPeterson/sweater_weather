@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe "User Roadtrip API" do
   it "takes an api key and returns future forecast info" do
-    stub_json("https://maps.googleapis.com/maps/api/directions/json?destination=Pueblo,CO&key=AIzaSyCRySaQvXzqSfds4VdpR9R1pYLXgfIDFJ4&origin=", "./fixtures/directions_den_to_pueblo.json")
+    stub_json("https://maps.googleapis.com/maps/api/directions/json?destination=Pueblo,CO&key=#{ENV["GEOCODE_API_KEY"]}&origin=", "./fixtures/directions_den_to_pueblo.json")
     WebMock.allow_net_connect!
 
     user = User.create!(email: "whatever@example.com", password: "password", api_key: "d450965fb2f168d4ddc607")
