@@ -2,7 +2,8 @@ require 'rails_helper'
 
 describe DarkskyService do
 	before :each do
-		@darksky_service = DarkskyService.new(ENV['DARKSKY_API_KEY'])
+		WebMock.allow_net_connect!
+		@darksky_service = DarkskyService.new("39.7392","-104.9903")
 	end
 
   it "exists" do
