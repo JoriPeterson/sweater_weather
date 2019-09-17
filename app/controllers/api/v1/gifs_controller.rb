@@ -1,13 +1,8 @@
 class Api::V1::GifsController < ApplicationController
 
   def show
-    location_facade = LocationFacade.new(params[:location])
-    lat = location_facade.address_components.lat
-    lng = location_facade.address_components.lng
-    forecast_facade = ForecastFacade.new(lat, lng)
-
+    forecast_facade = ForecastFacade.new(params[:location])
     gif_facade = GifFacade.new(forecast_facade.weather_info)
-
     render json: GifSerializer.new(gif_facade.create_objects.flatten)
   end
 end
