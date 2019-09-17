@@ -4,7 +4,7 @@ describe "Giphy Request API" do
   it "retrieves a gif for the city" do
     stub_json("https://api.darksky.net/forecast/#{ENV["DARKSKY_API_KEY"]}/39.7392,-104.9903?exclude=minutely", "./fixtures/darksky_denver.json")
     stub_json("https://maps.googleapis.com/maps/api/geocode/json?address=denver,co&key=#{ENV["GEOCODE_API_KEY"]}", "./fixtures/geocode_denver.json")
-    stub_json("https://api.giphy.com/v1/gifs/search?api_key=#{ENV["GIPHY_API_KEY"]}&q=Mostly%20cloudy%20throughout%20the%20day.", "./fixtures/giphy_denver.json")
+    WebMock.allow_net_connect!
 
     location = "denver, co"
 
