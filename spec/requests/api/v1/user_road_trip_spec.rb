@@ -6,7 +6,6 @@ describe "User Roadtrip API" do
     WebMock.allow_net_connect!
 
     user = User.create!(email: "whatever@example.com", password: "password", api_key: "d450965fb2f168d4ddc607")
-    allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
 
     post "/api/v1/road_trip", params: { "origin" => "Denver,CO", "destination" => "Pueblo,CO", "api_key" => "#{user.api_key}" }.to_json, headers: { 'CONTENT_TYPE' => 'application/json', 'ACCEPT' => 'application/json' }
 
