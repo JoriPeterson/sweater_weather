@@ -1,12 +1,18 @@
 class Api::V1::UsersController < ApplicationController
+  skip_before_action :verify_authenticity_token
 
   def create
     respond_to :json
-    user = User.create(
-      email: params[:email],
-      password_digest: params[:password],
-      api_key: User.api_key
-      )
-    render json: ApiSerializer.new(user.api_key)
+    user = User.new(user_params)
+    user.api_key = User.api_key
+    if user.save
+      render json: ApiSerializer.new(user.api_key), status: 201
+    else
+      render json: { error: "An error occured" }, status: 400
+    end
+  end
+
+  def user_params
+    params.permit(:email, :password, :password_confirmation)
   end
 end
