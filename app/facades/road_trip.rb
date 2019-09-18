@@ -1,7 +1,7 @@
 class RoadTrip
 
-  def initialize(orgin, destination)
-    @orgin = orgin
+  def initialize(origin, destination)
+    @origin = origin
     @destination = destination
     @duration = trip_details.duration
     @destination_lat = trip_details.destination_lat.round(4)

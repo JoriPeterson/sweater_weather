@@ -1,12 +1,12 @@
 class Api::V1::SessionsController < ApplicationController
+  skip_before_action :verify_authenticity_token
 
   def create
-    user = User.find_by(email: params[:session][:email])
+    user = User.find_by(email: params[:email])
     if user && user.authenticate(params[:session][:password])
-      session[:user_id] = user.id
-      render json: ApiSerializer.new(user.api_key)
+      render json: ApiSerializer.new(user.api_key), status: 201
     else
-      flash[:error] = "Looks like your email or password is invalid"
+      render json: { error: "An error occured" }, status: 400
     end
   end
 end

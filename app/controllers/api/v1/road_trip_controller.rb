@@ -1,12 +1,15 @@
 class Api::V1::RoadTripController < ApplicationController
+  skip_before_action :verify_authenticity_token
 
   def create
-    if current_user.api_key == params[:api_key]
+    key = params[:api_key]
+    user = User.where("users.api_key = ?", key)
+    if !user.empty?
       respond_to :json
       road_trip = RoadTrip.new(params[:origin], params[:destination])
       render json: RoadTripSerializer.new(road_trip.future_forecast)
     else
-      render file: "/public/401", status: 401
+      render json: { error: "An error occured" }, status: 401
     end
   end
 end
