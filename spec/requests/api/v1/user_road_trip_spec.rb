@@ -17,4 +17,30 @@ describe "User Roadtrip API" do
     expect(info[:data][:attributes][:temperature].class).to eq(Integer)
     expect(info[:data][:attributes][:summary].class).to eq(String)
   end
+
+  it "works with trip under an hour" do
+    stub_json("https://maps.googleapis.com/maps/api/directions/json?destination=Pueblo,CO&key=#{ENV["GEOCODE_API_KEY"]}&origin=", "./fixtures/directions_den_to_westminster.json")
+    WebMock.allow_net_connect!
+
+    user = User.create!(email: "whatever@example.com", password: "password", api_key: "d450965fb2f168d4ddc607")
+
+    post "/api/v1/road_trip", params: { "origin" => "Denver,CO", "destination" => "Westminster,CO", "api_key" => "#{user.api_key}" }.to_json, headers: { 'CONTENT_TYPE' => 'application/json', 'ACCEPT' => 'application/json' }
+
+    info = JSON.parse(response.body, symbolize_names: true)
+
+    expect(response).to be_successful
+
+    expect(info[:data][:attributes][:estimated_travel_time]).to eq("20 mins")
+    expect(info[:data][:attributes][:temperature].class).to eq(Integer)
+    expect(info[:data][:attributes][:summary].class).to eq(String)
+  end
+
+  it "doesn't work with invalid api key" do
+
+    post "/api/v1/road_trip", params: { "origin" => "Denver,CO", "destination" => "Westminster,CO", "api_key" => "b2f168d4ddc607" }.to_json, headers: { 'CONTENT_TYPE' => 'application/json', 'ACCEPT' => 'application/json' }
+
+    info = JSON.parse(response.body, symbolize_names: true)
+
+    expect(info).to eq({:error=>"An error occured"})
+  end
 end

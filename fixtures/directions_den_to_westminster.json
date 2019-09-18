@@ -1,0 +1,379 @@
+{
+   "geocoded_waypoints": [
+      {
+         "geocoder_status": "OK",
+         "place_id": "ChIJzxcfI6qAa4cR1jaKJ_j0jhE",
+         "types": [
+            "locality",
+            "political"
+         ]
+      },
+      {
+         "geocoder_status": "OK",
+         "place_id": "ChIJn39Zoh6Ia4cRF0R0P3BXz6g",
+         "types": [
+            "locality",
+            "political"
+         ]
+      }
+   ],
+   "routes": [
+      {
+         "bounds": {
+            "northeast": {
+               "lat": 39.8384412,
+               "lng": -104.9817282
+            },
+            "southwest": {
+               "lat": 39.7401302,
+               "lng": -105.0373995
+            }
+         },
+         "copyrights": "Map data ©2019",
+         "legs": [
+            {
+               "distance": {
+                  "text": "12.4 mi",
+                  "value": 19889
+               },
+               "duration": {
+                  "text": "20 mins",
+                  "value": 1216
+               },
+               "end_address": "Westminster, CO, USA",
+               "end_location": {
+                  "lat": 39.8366546,
+                  "lng": -105.0373995
+               },
+               "start_address": "Denver, CO, USA",
+               "start_location": {
+                  "lat": 39.7411598,
+                  "lng": -104.9879112
+               },
+               "steps": [
+                  {
+                     "distance": {
+                        "text": "157 ft",
+                        "value": 48
+                     },
+                     "duration": {
+                        "text": "1 min",
+                        "value": 9
+                     },
+                     "end_location": {
+                        "lat": 39.7414646,
+                        "lng": -104.9883164
+                     },
+                     "html_instructions": "Head <b>northwest</b> toward <b>Cleveland Pl</b>",
+                     "polyline": {
+                        "points": "g}pqFlmx_S{@pA"
+                     },
+                     "start_location": {
+                        "lat": 39.7411598,
+                        "lng": -104.9879112
+                     },
+                     "travel_mode": "DRIVING"
+                  },
+                  {
+                     "distance": {
+                        "text": "282 ft",
+                        "value": 86
+                     },
+                     "duration": {
+                        "text": "1 min",
+                        "value": 53
+                     },
+                     "end_location": {
+                        "lat": 39.7409126,
+                        "lng": -104.9890212
+                     },
+                     "html_instructions": "Turn <b>left</b> onto <b>Cleveland Pl</b>",
+                     "maneuver": "turn-left",
+                     "polyline": {
+                        "points": "c_qqF~ox_SlBjC"
+                     },
+                     "start_location": {
+                        "lat": 39.7414646,
+                        "lng": -104.9883164
+                     },
+                     "travel_mode": "DRIVING"
+                  },
+                  {
+                     "distance": {
+                        "text": "0.1 mi",
+                        "value": 209
+                     },
+                     "duration": {
+                        "text": "1 min",
+                        "value": 48
+                     },
+                     "end_location": {
+                        "lat": 39.7422411,
+                        "lng": -104.9907508
+                     },
+                     "html_instructions": "Turn <b>right</b> onto <b>15th St</b>",
+                     "maneuver": "turn-right",
+                     "polyline": {
+                        "points": "u{pqFjtx_SWZqBxCi@r@UX_AtA"
+                     },
+                     "start_location": {
+                        "lat": 39.7409126,
+                        "lng": -104.9890212
+                     },
+                     "travel_mode": "DRIVING"
+                  },
+                  {
+                     "distance": {
+                        "text": "0.2 mi",
+                        "value": 319
+                     },
+                     "duration": {
+                        "text": "1 min",
+                        "value": 74
+                     },
+                     "end_location": {
+                        "lat": 39.7401302,
+                        "lng": -104.9930356
+                     },
+                     "html_instructions": "Turn <b>left</b> onto <b>Tremont Pl</b>",
+                     "maneuver": "turn-left",
+                     "polyline": {
+                        "points": "_dqqFd_y_S^h@`@j@n@~@V^T\\X^pBrCr@`ADDBBB@@@D?RADADANG"
+                     },
+                     "start_location": {
+                        "lat": 39.7422411,
+                        "lng": -104.9907508
+                     },
+                     "travel_mode": "DRIVING"
+                  },
+                  {
+                     "distance": {
+                        "text": "0.9 mi",
+                        "value": 1425
+                     },
+                     "duration": {
+                        "text": "3 mins",
+                        "value": 182
+                     },
+                     "end_location": {
+                        "lat": 39.7403599,
+                        "lng": -105.0096948
+                     },
+                     "html_instructions": "Turn <b>right</b> onto <b>W Colfax Ave</b><div style=\"font-size:0.9em\">Pass by McDonald's (on the left in 0.6&nbsp;mi)</div>",
+                     "maneuver": "turn-right",
+                     "polyline": {
+                        "points": "yvpqFnmy_SAtA?`C?hB?nB?T?~BAxA?P?l@?lA?~CAj@?NANAb@Ad@?^?N?vAAxB?f@@lA?\\@t@B~A?v@?b@?t@@jB?RAbE?\\?P?PA`@AT?F?FEbACnAAtAEbEAb@E~CAlB?XCdB?ZAjBAR?R"
+                     },
+                     "start_location": {
+                        "lat": 39.7401302,
+                        "lng": -104.9930356
+                     },
+                     "travel_mode": "DRIVING"
+                  },
+                  {
+                     "distance": {
+                        "text": "0.4 mi",
+                        "value": 704
+                     },
+                     "duration": {
+                        "text": "1 min",
+                        "value": 44
+                     },
+                     "end_location": {
+                        "lat": 39.7436634,
+                        "lng": -105.01624
+                     },
+                     "html_instructions": "Take the ramp to <b>Ft Collins</b>",
+                     "maneuver": "ramp-right",
+                     "polyline": {
+                        "points": "gxpqFpu|_SCJAJAJCRAPANMdDI~AKbAE^Gh@ETGNKXKTGD[^MJULc@ROFA?MHOHGDMLIJGH?@Wd@O\\CFEPITA@OX?@CDINABABINCFQ^Q\\Ud@Wd@OTwCtE"
+                     },
+                     "start_location": {
+                        "lat": 39.7403599,
+                        "lng": -105.0096948
+                     },
+                     "travel_mode": "DRIVING"
+                  },
+                  {
+                     "distance": {
+                        "text": "6.1 mi",
+                        "value": 9791
+                     },
+                     "duration": {
+                        "text": "6 mins",
+                        "value": 371
+                     },
+                     "end_location": {
+                        "lat": 39.8214959,
+                        "lng": -104.9825117
+                     },
+                     "html_instructions": "Merge onto <b>I-25 N</b>",
+                     "maneuver": "merge",
+                     "polyline": {
+                        "points": "{lqqFn~}_SIHa@^?@k@h@w@x@o@j@aAv@q@`@e@Tg@RC?s@R[Hi@HYDi@Fk@Bm@?iACe@Es@Mg@Mk@QwBm@KCcA]oA[GCs@UQEi@Qu@WkCaAmAc@a@SA?k@[}@k@e@[MIMKgAeAKK]]sAsAs@aAY_@SYsB{CkAiBKQ]i@U]q@cAiE{GeA_BGG?Ac@q@{BiDMSEIAAKQkEyGuBqDq@oAyAeCs@oAg@}@U_@CCIOCEe@w@S_@OUW_@W[OSKMSUSSEGYYSSUUIGSSYUYU[W[Uu@e@]UMIUMAAAAOKs@c@MMKMSQsA}@UMWQEC[U]W[WUSWYMMOMIMKQaAaBe@aAgAaDAG[}@Oc@]wAe@_BOi@CKkAeE[{@I]K[K[?CACY_AOe@EKKWEIKWIUKSO_@Wg@OYWg@OYYg@SY]g@OUW]GIKMQUOQw@y@e@e@cA{@u@k@a@W_Am@e@Uc@UiDoAm@Qs@Ok@OOCw@OUEg@Gi@GQAg@Ei@ESAS?QAS?}ECo@?A?UAkA?kD?mB?C?kBAgGGs@?W?M?E?Q?W?}@AQ?A?aAAcIAkBAG?W?C?A?[?{DBq@AiBC_C@y@Aw@Cw@AaACcAEaBM{C_@eBUc@GiBWc@G_C[sASc@GqAQsF{@oASmAUmCa@YEuB]mBc@yAc@GCuBq@uAi@QGi@Sq@Ym@UuBy@WKy@]eBs@yAm@uB}@yB_ASKWKYK_Aa@kBy@[M]Mq@Um@Sq@S}A_@mB]i@Im@Gu@GaBGmBEI?wA?}CBuC@iA?iA?_HAsHCyIIi@AeFGq@AaCAm@Ak@Ay@AgAA]AA?S?eAAc@AQ?A?wBCaCE{FIk@Ae@A"
+                     },
+                     "start_location": {
+                        "lat": 39.7436634,
+                        "lng": -105.01624
+                     },
+                     "travel_mode": "DRIVING"
+                  },
+                  {
+                     "distance": {
+                        "text": "2.4 mi",
+                        "value": 3873
+                     },
+                     "duration": {
+                        "text": "2 mins",
+                        "value": 146
+                     },
+                     "end_location": {
+                        "lat": 39.8343004,
+                        "lng": -105.0181185
+                     },
+                     "html_instructions": "Take exit <b>217A</b> on the <b>left</b> to merge onto <b>US-36 W</b> toward <b>Boulder</b>",
+                     "maneuver": "ramp-left",
+                     "polyline": {
+                        "points": "ks`rFtkw_S[NC@O?o@Ao@C]?aBK}@IYCa@Gi@Is@Kg@Ks@MyAYo@M{AYWGKAIAMCIAE?MAK?Q?O?]DK@KBSDC?IDMDMFMFKDA@QLQLMLGHONIHGHCD?@KNSb@IRIVA@ENGRAFABAJAFCLCNANCLAL?LCf@?P?L?NBp@Bn@@XAJ?PCl@LdDFtABnAFfC?@BzF?dD?xG?jB?lBAn@?hCAdCAbAIhBKlBSnBMfACPKn@EVOx@CRs@lDAHmAlGm@|CABa@vBu@vDmB|J{AzIUfA[fBAD?@GZAFWtAuAfHCLG\\YvAYvAq@lDYzA]`BIf@K^_@fBa@lBw@dEqBjKUhAy@lEaAtF"
+                     },
+                     "start_location": {
+                        "lat": 39.8214959,
+                        "lng": -104.9825117
+                     },
+                     "travel_mode": "DRIVING"
+                  },
+                  {
+                     "distance": {
+                        "text": "0.7 mi",
+                        "value": 1077
+                     },
+                     "duration": {
+                        "text": "1 min",
+                        "value": 54
+                     },
+                     "end_location": {
+                        "lat": 39.8373855,
+                        "lng": -105.0250265
+                     },
+                     "html_instructions": "Take the <b>US-287 S</b>/<wbr/><b>Federal Blvd</b> exit",
+                     "maneuver": "ramp-right",
+                     "polyline": {
+                        "points": "kccrFfj~_SOHEDCHK^e@zBMd@g@bC_@fB[zASjAMp@Mj@u@~DqBlKGVEXEN?@?@GTu@bEKd@EPGNMRIJMLOHQHUDI@MAMAQEKEGEQMKK?AIOISGQEQAQCQ?O@K?MBQBMBQBIDIFMDGDGBCFGDEHGFCJELCJAFCBAB??A@A?G"
+                     },
+                     "start_location": {
+                        "lat": 39.8343004,
+                        "lng": -105.0181185
+                     },
+                     "travel_mode": "DRIVING"
+                  },
+                  {
+                     "distance": {
+                        "text": "0.4 mi",
+                        "value": 641
+                     },
+                     "duration": {
+                        "text": "1 min",
+                        "value": 43
+                     },
+                     "end_location": {
+                        "lat": 39.8316196,
+                        "lng": -105.0250142
+                     },
+                     "html_instructions": "Turn <b>right</b> onto <b>US-287 S</b>/<wbr/><b>N Federal Blvd</b>",
+                     "maneuver": "turn-right",
+                     "polyline": {
+                        "points": "uvcrFlu_`SbA?hBCP?`@?\\?H?`@?d@@^@v@?pC?n@AhAAnB@vB?z@?fA?~AA"
+                     },
+                     "start_location": {
+                        "lat": 39.8373855,
+                        "lng": -105.0250265
+                     },
+                     "travel_mode": "DRIVING"
+                  },
+                  {
+                     "distance": {
+                        "text": "0.8 mi",
+                        "value": 1305
+                     },
+                     "duration": {
+                        "text": "2 mins",
+                        "value": 110
+                     },
+                     "end_location": {
+                        "lat": 39.8384412,
+                        "lng": -105.0346733
+                     },
+                     "html_instructions": "Turn <b>right</b>",
+                     "maneuver": "turn-right",
+                     "polyline": {
+                        "points": "srbrFhu_`SCNALCFCDABEDC@E@GAI?s@Oi@IOAM??A]?c@Bi@BW@a@BE?Q@_@@e@?w@?c@?w@?q@DQBC@K@MDMBMFOFOJ_@TKHKJQTW\\KPKNKTKTSf@KZIXOn@GXGRS~@Qx@w@`Ew@fEg@lCa@fB_AdEeAjEK\\I^Gd@CPANCb@@HAv@?Z?JAP?@ADAF"
+                     },
+                     "start_location": {
+                        "lat": 39.8316196,
+                        "lng": -105.0250142
+                     },
+                     "travel_mode": "DRIVING"
+                  },
+                  {
+                     "distance": {
+                        "text": "0.2 mi",
+                        "value": 245
+                     },
+                     "duration": {
+                        "text": "1 min",
+                        "value": 39
+                     },
+                     "end_location": {
+                        "lat": 39.8381442,
+                        "lng": -105.0373768
+                     },
+                     "html_instructions": "Turn <b>left</b> onto <b>W 78th Ave</b>",
+                     "maneuver": "turn-left",
+                     "polyline": {
+                        "points": "g}crFtqa`SJHFDFDBDHJDNBH@HBN?B@lCAnE@~A"
+                     },
+                     "start_location": {
+                        "lat": 39.8384412,
+                        "lng": -105.0346733
+                     },
+                     "travel_mode": "DRIVING"
+                  },
+                  {
+                     "distance": {
+                        "text": "0.1 mi",
+                        "value": 166
+                     },
+                     "duration": {
+                        "text": "1 min",
+                        "value": 43
+                     },
+                     "end_location": {
+                        "lat": 39.8366546,
+                        "lng": -105.0373995
+                     },
+                     "html_instructions": "Turn <b>left</b> onto <b>Newton St</b>",
+                     "maneuver": "turn-left",
+                     "polyline": {
+                        "points": "k{crFrbb`SxE@fA@F?"
+                     },
+                     "start_location": {
+                        "lat": 39.8381442,
+                        "lng": -105.0373768
+                     },
+                     "travel_mode": "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry": [],
+               "via_waypoint": []
+            }
+         ],
+         "overview_polyline": {
+            "points": "g}pqFlmx_S{@pAlBjCiCtD_AlA_AtA^h@pAjBl@|@dEzFNFXCTIApLA`GAfIEhBA`GBhEBpF?`JM~FUjUCnDKv@[fHQbBM~@Sh@SZi@j@y@`@o@ZURQTk@lAOf@QZMVQ^qAhCgDjFk@h@sCpCaAv@q@`@mAh@w@ReARcALyABoBI{A[sFaB}C{@_Bi@yEeBmC{As@e@uAqAi@i@sAsAs@aAm@y@_EeGi@{@wI}M}DeGwEkHgDaGkEsHw@qAc@u@o@{@cAkAiAkAqAgAkCiBg@[cAo@Y[gBoAm@_@{AiAkAiAU_@gBcDuBkGwAmFeD_Lg@sAq@aBoAcC{A_C}@kAgAkAiBaBwAcAeBcAc@UiDoAaBa@iCi@kCWcBIcHC{JAkLIeDAyOEwEB{CEyD?oBEeCIaBM{C_@iC]mC_@iIiA_PgCoCc@gEgAeFgB_G}BqGkC}NkGoDkA}A_@mB]wAQwCOwBEuMDiJAsHCyIIoGIsDC{EGyBC_SY_@P_AAmAC_DUyCa@eFaAiCe@k@G]?m@Do@Js@Zq@b@o@p@W`@g@nAQl@U`BCtAHjCA\\Cl@LdDJdDFhCB`L?dKClLKlD_@|Ec@`DiAdG_DfPcDtPqBbLe@jCaFnWmAdGkFfXoAvGaAtFOHINq@zCu@hD{@bEeBhJmChNaAhFM`@W^]Vg@NW?_@GSK]YIQQe@Gc@Ca@@YN{@Xg@ZYl@ONG@IlDCzA?~CBzJAzIAMj@GHIBoB[{@CgCL}AB{A?w@?q@DUDYF{@^k@^]`@c@n@Wd@_@|@Ut@s@|CiDpQaBlHqAhFQdAE`@C`CCd@AFJHNJLPHXDX@pC?nH`HBF?"
+         },
+         "summary": "I-25 N",
+         "warnings": [],
+         "waypoint_order": []
+      }
+   ],
+   "status": "OK"
+}
