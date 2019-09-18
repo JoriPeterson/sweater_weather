@@ -5,7 +5,7 @@ class BackgroundFacade
   end
 
   def backgrounds
-     services.get_background[0][:urls][:full]
+     services.get_background[:results][0][:urls][:full]
   end
 
   private
