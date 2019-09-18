@@ -5,7 +5,7 @@ class UnsplashService
   end
 
   def get_background
-    get_json("/search/photos/?")
+    get_json("/search/photos?")
   end
 
   private
@@ -13,7 +13,7 @@ class UnsplashService
   def conn
     Faraday.new('https://api.unsplash.com') do |f|
       f.params['client_id'] = ENV["UNSPLASH_API_KEY"]
-      f.params['query'] = "#{@location}+city"
+      f.params['query'] = "#{@location}+skyline"
       f.adapter Faraday.default_adapter
     end
   end
